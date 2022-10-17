@@ -1,0 +1,192 @@
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9a35d08c ;
+  }
+  
+  @media (min-width: 768px) {
+    .navegacion {
+        flex-direction: row;
+    }
+  }
+  .navegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  
+  @media (min-width: 650px) {
+    .navegacion {
+        flex-direction: row;
+    }
+  }
+  .navegacion a {
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem;}
+
+
+
+
+    .contenedor-formulario{
+        padding: 70px 20px;
+        background-image: url(/img/fondotorneo2.jpg);
+}
+   
+  
+  @media (min-width: 769px) and (orientation: landscape) {
+    .contenedor-formulario {
+        background-image: url(/img/fondotorneo2++.jpg);
+        background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      gap: 77px;
+      padding: 116px 0 116px 0;
+    }
+  }
+  
+
+
+  .logo-torneo-form{
+    display: block;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+  }
+  
+  @media (min-width: 769px) and (orientation: landscape) {
+    .logo-torneo-form{
+      height: 180px;
+      width: 180px;
+      margin: 0;
+      justify-content: right;
+      align-items: flex-end;
+    }
+  }
+
+  .titulo-formulario {
+    color: #fafafa;
+    padding-left: 34%;
+  }
+  
+  @media (min-width: 769px) and (orientation: landscape) {
+    .titulo-formulario {
+      font-family:  'Times New Roman', Times, serif;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -1px;
+      text-align: right;
+      padding-left: 10%;
+    }
+  }
+  
+  .sub-subtitulo {
+    font-family:  sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 19px auto 16px auto;
+  }
+  
+  .form {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .titulo-nombre, .titulo-apellido, .titulo-starter,
+  .titulo-mail,.mail, .titulo-mensaje {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fafafa;
+    margin: 36.42px 0 9px 0;
+  }
+  
+  @media (min-width: 769px) and (orientation: landscape) {
+    .titulo-nombre, .titulo-apellido,.titulo-starter, .titulo-mensaje  {
+      margin-top: 0;
+    }
+  }
+  
+  .apellido, .nombre, .mail, .select, .titulo-starter, .mensaje  {
+    box-sizing: border-box;
+    width: 335px;
+    height: 45px;
+    margin-top: 0;
+  }
+
+
+
+
+  .conjunto-mensaje {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+
+  
+  .boton-enviar {
+    width: 335px;
+    height: 45px;
+    background-color: #fac400c1;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9a35d08c
+  }
+  
+  @media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        background-color: #9a35d08c
+      
+        
+  
+    }
+  }
+  
+  
+  .icono {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+   
+  }
+.titulo-icono{
+    color: #fafafa;
+}
+  
+  .formulaio{
+  justify-content: center;
+  }
+      

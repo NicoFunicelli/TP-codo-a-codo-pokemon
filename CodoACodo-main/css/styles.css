@@ -1,0 +1,368 @@
+/* PALETA DE COLORES */
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #517664;
+    --secundario: #7EACA1;
+    --claro: #EFF1F3;
+    --navegacion: #D6E5E3;
+    --navagua: #256d7e;
+    --navfuego: #6c2a2a;
+    --navplanta: #2a6c30;
+}
+
+/* GLOBALES */
+html {
+    height: 100%;
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px; /* 1 rem = 10px */
+    font-family: 'Raleway', sans-serif;
+    min-height: 100%;
+
+    background-image: url(/img/fonodopokenon.png);
+
+}
+footer{
+    margin-top: auto;
+}
+h1 {
+    font-size: 3.8rem;
+    margin-top: 0;
+    margin-bottom:150px;
+
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+    margin-top: 0;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+
+
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.descripcion {
+    max-width: 85rem;
+    margin: 2rem auto;
+}
+
+.descripcion p {
+    text-align: center;
+    line-height: 3rem;
+}
+
+.sombra {
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(107,107,107,1);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(107,107,107,1);
+    box-shadow: 0px 5px 15px 0px rgba(107,107,107,1);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1.5rem;
+}
+
+.boton {
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: .8rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .8rem;
+    border: none;
+}
+
+.svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* PORTADA */
+.portada {
+    background-image: linear-gradient(to right, rgba(107, 17, 203, 0.30) 0%, rgba(37, 116, 252, 0.30) 100%), url(/img/Portada.png);  
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.contenido-portada {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+}
+
+/* BARRA DE NAVEGACIÓN */
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.nav-agua {
+    background-color: var(--navagua);
+}
+
+.nav-fuego {
+    background-color: var(--navfuego);
+}
+
+.nav-planta {
+    background-color: var(--navplanta);
+}
+
+.navegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 650px) {
+    .navegacion {
+        flex-direction: row;
+    }
+}
+
+.navegacion a {
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem;
+}
+
+.navegacion a:hover {
+    background-color: var(--navegacion);
+    color: var(--oscuro);
+}
+
+.logo-principal{
+    height: 250px;
+    width: 250px;
+    margin-left:43%;
+    margin-top: 100px;
+}
+
+.titulo-torneo{
+    z-index: 1px;
+}
+/* STARTERS */
+@media (min-width: 675px) {
+    .starters {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
+    }
+}
+
+.starter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.starter h3 {
+    color: var(--secundario);
+}
+
+.starter .pokemon {
+    height: 25rem;
+    width: 25rem;
+    background-color: var(--claro);
+    border-radius: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon:hover {
+    transition: all 0.5s;
+    transform: scale(1.15);
+}
+
+/* PÁGINAS DE TIPOS */
+span {
+    font-weight: 500;
+}
+
+.centerimg {
+    display: block;
+    margin: auto;
+}
+
+.justify {
+    text-align: justify;
+}
+
+.descripcionagua {
+    max-width: 85rem;
+    margin: 2rem auto;
+    background: rgb(18,122,189);
+    background: -moz-linear-gradient(349deg, rgba(18,122,189,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+    background: -webkit-linear-gradient(349deg, rgba(18,122,189,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+    background: linear-gradient(349deg, rgba(18,122,189,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+}
+
+.descripcionfuego {
+    max-width: 85rem;
+    margin: 2rem auto;
+    background: rgb(185,23,23);
+    background: -moz-linear-gradient(349deg, rgba(185,23,23,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+    background: -webkit-linear-gradient(349deg, rgba(185,23,23,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+    background: linear-gradient(349deg, rgba(185,23,23,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+}
+
+.descripcionplanta {
+    max-width: 85rem;
+    margin: 2rem auto;
+    background: rgb(3,168,5);
+    background: -moz-linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+    background: -webkit-linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+    background: linear-gradient(349deg, rgba(3,168,5,1) 0%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 75%);
+}
+
+/* TORNEO */
+.descripciontorneo {
+    max-width: 85rem;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+@media (min-width: 768px) {
+    .descripciontorneoright {
+        display: grid;
+        grid-template-columns: 25% 75%;
+    }
+} 
+
+@media (min-width: 768px) {
+    .descripciontorneoleft {
+        display: grid;
+        grid-template-columns: 75% 25%;
+    }
+}
+
+.left {
+    text-align: center;
+}
+
+.inscripcion-form{
+    display: flex;
+    align-self: center;
+    padding-bottom: 10px;
+
+}
+
+.boton-form{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: .5rem 3rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .8rem;
+    border: none;
+
+
+
+
+    
+}
+.iconotorneo {
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+}
+
+/* FOOTER */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (min-width: 480px) {
+    .footer {
+        flex-direction: row;
+    }
+}
+
+.footerindex {
+    background-color: var(--secundario);
+}
+
+.footeragua {
+    background-color: var(--navagua);
+}
+
+.footerfuego {
+    background-color: var(--navfuego);
+}
+
+.footerplanta {
+    background-color: var(--navplanta);
+}
+
+.icono {
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--oscuro);
+    border-radius: 50%;
+}
+
+.formulaio{
+justify-content: center;
+
+
+}
+
+#carouselExampleControls{
+height: 200px;
+width: 200px;
+margin-left: 45%;
+margin-top: 60px;
+margin-bottom: 60px;
+
+
+
+}
+
